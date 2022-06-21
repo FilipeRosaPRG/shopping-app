@@ -18,7 +18,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(5),
       margin: EdgeInsets.all(5),
       width: 170,
       color: Colors.black12,
@@ -50,10 +50,10 @@ class ProductCard extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 5,
           ),
           Container(
-            height: 60,
+            height: 40,
             child: Text(
               title,
               style: TextStyle(
@@ -62,9 +62,6 @@ class ProductCard extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 5,
-          ),
           Text(
             description,
             style: TextStyle(
@@ -72,9 +69,7 @@ class ProductCard extends StatelessWidget {
               fontWeight: FontWeight.w300,
             ),
           ),
-          SizedBox(
-            height: 5,
-          ),
+
           Text(
             "\$ $price",
             style: TextStyle(

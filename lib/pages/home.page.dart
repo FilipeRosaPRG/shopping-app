@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(15),
+        padding: EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -19,40 +19,38 @@ class HomePage extends StatelessWidget {
             ),
             SearchBox(),
             SizedBox(
-              height: 30,
+              height: 20,
             ),
             Text(
               "Categories",
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.headline5,
             ),
             SizedBox(
               height: 10,
             ),
             Container(
-              height: 90,
+              height: 80,
               child: CategoryList(),
             ),
             SizedBox(
-              height: 30,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
                   "Best Selling",
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
-                FlatButton(
+                ElevatedButton(
                   child: Text("See All"),
                   onPressed: () => {},
                 ),
               ],
             ),
-            SizedBox(
-              height: 10,
-            ),
+
             Container(
-              height: 350,
+              height: 280,
               child: ProductList(
                 scrollDirection: Axis.horizontal,
               ),
